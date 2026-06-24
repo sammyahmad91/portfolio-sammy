@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-ink antialiased text-base;
+  }
+
+  ::selection {
+    @apply bg-signal/30 text-ink;
+  }
+}
+
+@layer utilities {
+  .text-gradient-signal {
+    @apply bg-gradient-to-r from-signal via-healthy to-neural bg-clip-text text-transparent;
+  }
+
+  .border-glow-signal {
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.15),
+      0 0 20px -5px rgba(34, 211, 238, 0.1);
+  }
+
+  .border-glow-neural {
+    box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.15),
+      0 0 20px -5px rgba(167, 139, 250, 0.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
