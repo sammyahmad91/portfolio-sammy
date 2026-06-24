@@ -24,7 +24,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 npm run build
 npm start
 ```
-
-## Design
-
-"Signal Layer" — an observability-dashboard aesthetic that reflects Sammy's dual expertise in DevOps/SRE and AI/ML platform engineering. Cyan signals for infrastructure, violet for neural/AI systems, emerald for health metrics.
