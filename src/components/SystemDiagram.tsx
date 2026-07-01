@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 
 const nodes = [
-  { id: "ingest", label: "Data Ingest", x: 60, y: 80, color: "#FB923C" },
-  { id: "kafka", label: "Kafka", x: 180, y: 50, color: "#22D3EE" },
-  { id: "train", label: "GPU Train", x: 300, y: 80, color: "#A78BFA" },
-  { id: "registry", label: "Model Registry", x: 420, y: 50, color: "#A78BFA" },
-  { id: "infer", label: "Inference", x: 540, y: 80, color: "#34D399" },
-  { id: "monitor", label: "Observability", x: 300, y: 180, color: "#22D3EE" },
+  { id: "ingest", label: "Data Ingest", x: 60, y: 80, color: "#C98A4B" },
+  { id: "kafka", label: "Kafka", x: 180, y: 50, color: "#8A8A90" },
+  { id: "train", label: "GPU Train", x: 300, y: 80, color: "#E0A24A" },
+  { id: "registry", label: "Model Registry", x: 420, y: 50, color: "#8A8A90" },
+  { id: "infer", label: "Inference", x: 540, y: 80, color: "#6E9E7A" },
+  { id: "monitor", label: "Observability", x: 300, y: 180, color: "#8A8A90" },
 ];
 
 const edges = [
@@ -67,7 +67,7 @@ export default function SystemDiagram() {
                   y1={a.y}
                   x2={b.x}
                   y2={b.y}
-                  stroke="rgba(34, 211, 238, 0.15)"
+                  stroke="rgba(255, 255, 255, 0.12)"
                   strokeWidth="1"
                   initial={{ pathLength: 0, opacity: 0 }}
                   animate={{ pathLength: 1, opacity: 1 }}
@@ -75,7 +75,7 @@ export default function SystemDiagram() {
                 />
                 <motion.circle
                   r="3"
-                  fill="#22D3EE"
+                  fill="#E0A24A"
                   filter="url(#glow)"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -108,7 +108,7 @@ export default function SystemDiagram() {
                 width="80"
                 height="32"
                 rx="6"
-                fill="rgba(18, 24, 32, 0.9)"
+                fill="rgba(24, 24, 26, 0.9)"
                 stroke={node.color}
                 strokeWidth="1"
                 strokeOpacity="0.4"

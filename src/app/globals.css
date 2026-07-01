@@ -18,17 +18,17 @@
 
 @layer utilities {
   .text-gradient-signal {
-    @apply bg-gradient-to-r from-signal via-healthy to-neural bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#F0C888] to-signal bg-clip-text text-transparent;
   }
 
   .border-glow-signal {
-    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.15),
-      0 0 20px -5px rgba(34, 211, 238, 0.1);
+    box-shadow: 0 0 0 1px rgba(224, 162, 74, 0.12),
+      0 1px 24px -12px rgba(224, 162, 74, 0.18);
   }
 
   .border-glow-neural {
-    box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.15),
-      0 0 20px -5px rgba(167, 139, 250, 0.1);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06),
+      0 1px 24px -12px rgba(0, 0, 0, 0.4);
   }
 }
 

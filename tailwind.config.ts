@@ -9,19 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        void: "#06080D",
-        surface: "#0C1018",
-        panel: "#121820",
-        border: "#1E2836",
-        muted: "#64748B",
-        signal: "#22D3EE",
-        neural: "#A78BFA",
-        healthy: "#34D399",
-        alert: "#FB923C",
-        ink: "#E2E8F0",
+        void: "#0A0A0B",
+        surface: "#121213",
+        panel: "#18181A",
+        border: "#2A2A2C",
+        muted: "#7C7C82",
+        signal: "#E0A24A",
+        neural: "#8A8A90",
+        healthy: "#6E9E7A",
+        alert: "#C98A4B",
+        ink: "#EAE7E2",
       },
       fontFamily: {
-        display: ["var(--font-outfit)", "system-ui", "sans-serif"],
+        display: ["var(--font-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-jetbrains)", "ui-monospace", "monospace"],
       },
       animation: {
@@ -41,7 +41,7 @@ const config: Config = {
       },
       backgroundImage: {
         "grid-pattern":
-          "linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px)",
+          "linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px)",
       },
     },
   },
